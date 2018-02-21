@@ -1,4 +1,4 @@
-# hello-world
+hello-world
 Just another repo
 
 echo "hello everyone"
