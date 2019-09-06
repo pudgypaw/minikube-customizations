@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: elasticsearch-ingress
+spec:
+  rules:
+  - host: elasticsearch.localdev.net
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: elasticsearch-master
+          servicePort: 9200
